@@ -1,0 +1,59 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+}
+
+.regresar, .siguiente{
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 2rem;
+  /* position: absolute; */
+}
+.regresar:hover{
+  translate: -0.5rem 0;
+}
+.regresar::after{
+  content: "Regresar";
+  position: absolute;
+  font-size: 0.9rem;
+  translate: 1rem 0.25rem;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.siguiente:hover{
+  translate: 0.5rem 0;
+}
+.siguiente::before{
+  content: "Siguiente";
+  position: absolute;
+  font-size: 0.9rem;
+  translate: -4.5rem 0.25rem;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.regresar:hover::after{
+  opacity: 1;
+  translate: 0.5rem 0.25rem;
+}
+.siguiente:hover::before{
+  opacity: 1;
+  translate: -4rem 0.25rem;
+}
+
+.flecha{
+  position: absolute;
+  top: 100%;
+}
+
+.cv-container{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: white;
+}
+
+.general{
+  background-color: rgb(12, 113, 153);
+  color: white;
+}
